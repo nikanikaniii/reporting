@@ -34,6 +34,7 @@ class CardDeliveryTest {
 
     @BeforeEach
     void setup() {
+        io.github.bonigarcia.wdm.WebDriverManager.chromedriver().setup();
         open("http://localhost:9999");
     }
 
